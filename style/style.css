@@ -1,0 +1,138 @@
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter/static/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lexend Deca;
+    src: url(../fonts/Lexend_Deca/LexendDeca-Regular.ttf);
+}
+
+main{
+    background-color: hsl(233, 47%, 7%);
+    height: 1000px;
+    padding-top: 100px;
+}
+
+h3{
+    color: hsl(0, 0%, 100%);
+    font-family: Lexend Deca;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.heading-paragraph{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2em;
+    opacity: 70%;
+}
+
+.card-container{
+    background-color: hsl(244, 38%, 16%);
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    overflow: clip;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.stats-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.stat{
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-heading{
+    color:hsl(0, 0%, 100%);
+    font-family: Lexend Deca;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.stat-text{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.insights{
+    color: hsl(277, 64%, 61%);
+}
+
+.card-image{
+    background-color: hsl(277deg 85% 33%);
+    background-size: contain;
+}
+
+#card-image-desktop,#card-image-mobile{
+    opacity: 50%;
+}
+
+@media (min-width:1313px) and (max-width:1440px){
+    .card-container{
+        width: 80%;
+    }
+}
+
+@media (max-width:1313px){
+
+    main{
+        height: 1300px;
+    }
+
+    h3{
+        margin-top: 30px;
+    }
+
+    .heading-paragraph{
+        font-size: 20px;
+    }
+
+    .card-container{
+        flex-wrap: wrap-reverse;
+        max-width: 655.89px;
+        text-align: center;
+    }
+    .stats-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+}
+    #card-image-desktop{
+        display:none;
+    }
+    #card-image-mobile{
+        display: block;
+    }
+}
+
+@media (min-width:1314px){
+    #card-image-desktop{
+        display:block;
+    }
+    #card-image-mobile{
+        display: none;
+    }
+}
